@@ -14,6 +14,6 @@ if($exitCode -ne 0) {
 }
 
 # Run connect command
-& "$env:ProgramW6432\AzureConnectedMachineAgent\azcmagent.exe" connect --service-principal-id "$servicePrincipalClientId" --service-principal-secret "$servicePrincipalSecret" --resource-group "we-AzureArc" --tenant-id "97c77cf4-3a62-4bd4-881e-32571196f806" --location "westeurope" --subscription-id "07293f17-f22b-4b98-8a2d-c4093157eca6" --cloud "AzureCloud" --tags "Datacenter=Maison,City=LYON,StateOrDistrict=RHONE,CountryOrRegion=FRANCE" --correlation-id "1848f605-06f2-4c5d-9eee-8128684f8000"
+& "$env:ProgramW6432\AzureConnectedMachineAgent\azcmagent.exe" connect --service-principal-id "$servicePrincipalClientId" --service-principal-secret "$servicePrincipalSecret" --resource-group "we-AzureArc" --tenant-id "XXXXXXXXXXXXXXXXXXXXXXXXX" --location "westeurope" --subscription-id "XXXXXXXXXXXXXXXXXXXXXXXXX" --cloud "AzureCloud" --tags "Datacenter=Maison,City=LYON,StateOrDistrict=RHONE,CountryOrRegion=FRANCE" --correlation-id "1848f605-06f2-4c5d-9eee-8128684f8000"
 
 if($LastExitCode -eq 0){Write-Host -ForegroundColor yellow "To view your onboarded server(s), navigate to https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.HybridCompute%2Fmachines"}
