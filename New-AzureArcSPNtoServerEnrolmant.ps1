@@ -1,7 +1,7 @@
 Import-Module -Name Az.Resources
 Import-Module -Name Az.Accounts
 
-$strSubID = "07293f17-f22b-4b98-8a2d-c4093157eca6"
+$strSubID = "EnterSubID"
 
 $param = @{
     DisplayName = "spn-zurearc-enrolment-servers";
